@@ -1,7 +1,7 @@
 # dinosaur.sh
 BASH Dinosaur Guessing Game
 
-Latest version includes family-based guessing, period-based guessing (with an addition of Fictional for dinos from the JW franchise that aren't real), and a random mode. Some dinos offer ASCII art from http://www.asciiworld.com/-Dinosaurs-.html and may be removed in future versions..
+Latest version includes family-based guessing, period-based guessing (with an addition of Fictional for dinos from the JW franchise that aren't real), and a random mode. Some dinos offer ASCII art from http://www.asciiworld.com/-Dinosaurs-.html, used with permission.
 
 TODO:<br>
 -Add an option for "I don't know" which reverts to random mode.<br>
