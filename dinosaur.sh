@@ -27,62 +27,50 @@ pterosaurs="$(shuf -e Pteranodon Hatzegopteryx Pterodactylus Quetzalcoatlus Pter
 
 guessmethod() {
   echo "How would you like to play?"
-  echo "1. By dinosaur family."
-  echo "2. By time period."
-  echo "3. Randomly."
-  echo ""
-  read method
-  case $method in
-    "1")
-      family
-      ;;
-    "2")
-      period
-      ;;
-    "3")
-      random
-      ;;
-    *)
-      echo "Please try again."
-      exit 1
-      ;;
-  esac
+  select method in family period randomly; do
+    case $method in
+      "family")
+        family
+        ;;
+      "period")
+        period
+        ;;
+      "randomly")
+        random
+        ;;
+      *)
+        echo "Please try again."
+        guessmethod
+        ;;
+    esac
+    break
+  done
 } #guessmethod
 
 period() {
   echo "Which period did your dinosaur live in?"
-  echo "1. Triassic"
-  echo "2. Jurassic"
-  echo "3. Cretaceous"
-  echo "4. Fictional"
-  echo ""
-  read choice
-  while true; do
-    case $choice in
-      "1")
+  select period in Triassic Jurassic Cretaceous Fictional; do
+    case $period in
+      "Triassic")
         triassic
-        break
       ;;
-      "2")
+      "Jurassic")
         jurassic
-        break
       ;;
-      "3")
+      "Cretaceous")
         cretaceous
-        break
       ;;
-      "4")
+      "Fictional")
         fictional
-        break
       ;;
       *)
         echo "Invalid choice. Please try again."
-        echo ""
-        read choice
+        period
       ;;
     esac
+    break
   done
-}
+} #period
 
 triassic() {
   for dino in $triassicdinos; do
@@ -116,8 +104,12 @@ random() {
 }
 
 family() {
+guess=""
 for class in $dinofamilies; do
   dinoclass $class
+  if [[ ! $guess == "" ]]; then
+    break
+  fi
 done
 
 case $guess in
@@ -128,9 +120,6 @@ case $guess in
     ;;
   "theropod")
     for guess2 in $theropods; do
-#      if [[ $guess2 == "Spinosaurus" ]]; then
-#        spinosaurus
-#      fi
       dinoclass $guess2 "yes"
     done
     ;;
@@ -151,9 +140,6 @@ case $guess in
     ;;
   "ankylosaur")
     for guess2 in $ankylosaurs; do
-#      if [[ $guess2 == "Ankylosaurus" ]]; then
-#        ankylosaurus
-#      fi
       dinoclass $guess2 "yes"
     done
     ;;
@@ -164,9 +150,6 @@ case $guess in
     ;;
   "hadrosaur")
     for guess2 in $hadrosaurs; do
-#      if [[ $guess2 == "Parasaurolophus" ]]; then
-#        parasaurolophus
-#      fi
       dinoclass $guess2 "yes"
     done
     ;;
@@ -184,8 +167,6 @@ esac
 } #family
 
 dinoclass() {
-  #class = $1
-  #species = $2
   class=$1
   species=$2
   case $1 in
@@ -209,7 +190,7 @@ dinoclass() {
         echo "Yay, I figured out your dinosaur."
         exit
       fi
-      break
+#      return
       ;;
     *)
       echo "Your dinosaur is NOT a $class...Hmmm..."
