@@ -9,21 +9,21 @@ main() {
   echo $dinostoadd >> dinostoadd.txt
 }
 
-triassicdinos="$(shuf -e Eoraptor Herrerasaurus Marasuchus Ichthyosaurus Nothosaurus Camposaurus Caseosaurus Chindesaurus Coelophysis Daemonosaurus Gojirasaurus Lepidus_praecisio Tawa_hallae)"
-jurassicdinos="$(shuf -e Stegosaurus Allosaurus Brachiosaurus Kentrosaurus Yangchuanosaurus Huayangosaurus Gigantspinosaurus Kentrosaurus Brachiosaurus Supersaurus Xinjiangtitan Diplodocus Apatosaurus Plesiosaurus Ichthyosaurus Pterodactylus Dimorphodon Dilophosaurus Sarahsaurus)"
-cretaceousdinos="$(shuf -e Velociraptor Oviraptor Utahraptor Dakotaraptor Dromaeosaurus Deinonychus Giganotasaurus T-Rex Gorgosaurus Spinosaurus Carcharodontosaurus Acrocanthosaurus Mapusaurus Troodon Nedoceratops Triceratops Protoceratops Styracosaurus Kosmoceratops Torosaurus Argentinosaurus Sauroposeidon Astrodon_Johnstoni Alamosaurus Ankylosaurus Euoplocephalus Anodontosaurus Nodosaurus Aletopelta Pachycephalosaurus Stygimoloch Dracorex Stegoceras Maiasaura Edmontosaurus Parasaurolophus Corythosaurus Iguanodon Gryposaurus Mosasaurus Cretoxyrhina Megalodon Kronosaurus Archelon Pteranodon Hatzegopteryx Quetzalcoatlus Pterodaustro Saltasaurus)"
-fictionaldinos="$(shuf -e Indominus_Rex Indoraptor Stegoceratops)"
+triassicdinos="$(shuf -e Eoraptor Herrerasaurus Marasuchus Ichthyosaurus Nothosaurus Camposaurus Caseosaurus Chindesaurus Coelophysis Daemonosaurus Gojirasaurus Lepidus_praecisio Tawa_hallae Riojasaurus)"
+jurassicdinos="$(shuf -e Stegosaurus Allosaurus Brachiosaurus Kentrosaurus Yangchuanosaurus Huayangosaurus Gigantspinosaurus Kentrosaurus Brachiosaurus Supersaurus Xinjiangtitan Diplodocus Apatosaurus Plesiosaurus Ichthyosaurus Pterodactylus Dimorphodon Dilophosaurus Sarahsaurus Mamenchisaurus Ceratosaurus Archaeopteryx Camarasaurus Megalosaurus)"
+cretaceousdinos="$(shuf -e Baryonyx Velociraptor Oviraptor Utahraptor Dakotaraptor Dromaeosaurus Deinonychus Giganotasaurus T-Rex Gorgosaurus Spinosaurus Carcharodontosaurus Acrocanthosaurus Mapusaurus Troodon Nedoceratops Triceratops Protoceratops Styracosaurus Kosmoceratops Torosaurus Argentinosaurus Sauroposeidon Astrodon_Johnstoni Alamosaurus Ankylosaurus Euoplocephalus Anodontosaurus Nodosaurus Aletopelta Pachycephalosaurus Stygimoloch Dracorex Stegoceras Maiasaura Edmontosaurus Parasaurolophus Corythosaurus Iguanodon Gryposaurus Mosasaurus Cretoxyrhina Megalodon Kronosaurus Archelon Pteranodon Hatzegopteryx Quetzalcoatlus Pterodaustro Saltasaurus Mamenchisaurus Tarbosaurus Microceratus Pentaceratops Edmontonia Carnotaurus Psittacosaurus Gallimimus Albertosaurus Dromiceiomimus Muttaburrasaurus)"
+fictionaldinos="$(shuf -e Christmasaurus Indominus_Rex Indoraptor Stegoceratops)"
 dinofamilies="$(shuf -e raptor theropod stegosaur ceratopsian sauropod ankylosaur pachycephalosaur hadrosaur marine_reptile pterosaur)"
 raptors="$(shuf -e Velociraptor Oviraptor Utahraptor Dakotaraptor Dromaeosaurus Deinonychyus Indoraptor)"
-theropods="$(shuf -e T-Rex Allosaurus Gorgosaurus Indominus_Rex Yangchuanosaurus Spinosaurus Giganotosaurus Carcharodontosaurus Acrocanthosaurus Mapusaurus Troodon Camposaurus Caseosaurus Chindesaurus Coelophysis Daemonosaurus Gojirasaurus Lepidus_praecisio Tawa_hallae Dilophosaurus)"
+theropods="$(shuf -e T-Rex Allosaurus Baryonyx Christmasaurus Gorgosaurus Indominus_Rex Yangchuanosaurus Spinosaurus Giganotosaurus Carcharodontosaurus Acrocanthosaurus Mapusaurus Troodon Camposaurus Caseosaurus Chindesaurus Coelophysis Daemonosaurus Gojirasaurus Lepidus_praecisio Tawa_hallae Dilophosaurus Tarbosaurus Carnotaurus Ceratosaurus Gallimimus Albertosaurus Dromiceiomimus Megalosaurus)"
 stegosaurs="$(shuf -e Huayangosaurus Gigantspinosaurus Stegosaurus Kentrosaurus)"
-ceratopsians="$(shuf -e Nedoceratops Triceratops Protoceratops Styracosaurus Kosmoceratops Torosaurus Stegoceratops)"
-sauropods="$(shuf -e Brachiosaurus Supersaurus Argentinosaurus Sauroposeidon Xinjiangtitan Astrodon_Johnstoni Diplodocus Apatosaurus Alamosaurus Plateosaurus Sarahsaurus Saltasaurus)"
-ankylosaurs="$(shuf -e Ankylosaurus Euoplocephalus Anodontosaurus Nodosaurus Aletopelta)"
+ceratopsians="$(shuf -e Nedoceratops Triceratops Protoceratops Styracosaurus Kosmoceratops Torosaurus Stegoceratops Microceratus Pentaceratops Psittacosaurus)"
+sauropods="$(shuf -e Brachiosaurus Supersaurus Argentinosaurus Sauroposeidon Xinjiangtitan Astrodon_Johnstoni Diplodocus Apatosaurus Alamosaurus Plateosaurus Sarahsaurus Saltasaurus Mamenchisaurus Riojasaurus Camarasaurus)"
+ankylosaurs="$(shuf -e Ankylosaurus Euoplocephalus Anodontosaurus Nodosaurus Aletopelta Edmontonia)"
 pachycephalosaurs="$(shuf -e Pachycephalosaurus Stygimoloch Dracorex Stegoceras)"
-hadrosaurs="$(shuf -e Maiasaura Edmontosaurus Parasaurolophus Corythosaurus Iguanodon Gryposaurus)"
+hadrosaurs="$(shuf -e Maiasaura Edmontosaurus Parasaurolophus Corythosaurus Iguanodon Gryposaurus Muttaburrasaurus)"
 marine_reptiles="$(shuf -e Mosasaurus Cretoxyrhina Megalodon Plesiosaurus Ichthyosaurus Nothosaurus Kronosaurus Archelon)"
-pterosaurs="$(shuf -e Pteranodon Hatzegopteryx Pterodactylus Quetzalcoatlus Pterodaustro Dimorphodon)"
+pterosaurs="$(shuf -e Pteranodon Hatzegopteryx Pterodactylus Quetzalcoatlus Pterodaustro Dimorphodon Archaeopteryx)"
 
 guessmethod() {
   echo "How would you like to play?"

@@ -1,31 +1,7 @@
-Dimetrodon
-Lesothosaurus
-Styracosaurus
-Baryonyx
-Edmontosaurus
-Corythosaurus
-Plateosaurus
-Mamenchisaurus
-Tabosaurus
-Dilophosaurus
-Oviraptor
-Microceratops
-Riojasaurus
-Pentaceratops
-Stygiomoloch
-Saltasaurus
-Edmontonia
-Carnotaurus
-Torosaurus
-Psittacosaurus
-Ceratosaurus
-Thescelosaurus
-Gallimimus
-Archaeopteryx
-Quetzalcoatlus
-Dimorphodon
-Albertosaurus
-Dromiceiomimus
-Camarasaurus
-Megalosaurus
-Taeniolabis
+Dimetrodon - not a dino
+Lesothosaurus - Jurassic, what "family"?
+Thescelosaurus - Cretaceous, what "family"?
+Taeniolabis - not a dino
+Suchoraptor
+Leaylnsauria
+Sinoceratops
